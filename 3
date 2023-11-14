@@ -1,0 +1,19 @@
+using System.Collections;
+using System;
+using System.Text;
+
+namespace lessons
+{
+    class program
+    {
+        static void Main()
+        {
+            int totalPictures = 52;
+            int rowSize = 3;
+            int totalPicturesRows = totalPictures/rowSize;
+            int excessPictures = totalPictures%rowSize;
+            Console.WriteLine($"Всего рядов картинок: {totalPicturesRows}");
+            Console.WriteLine($"Лишних картинок: {excessPictures}");
+        }
+    }
+}
