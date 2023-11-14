@@ -1,0 +1,20 @@
+using System.Collections;
+using System;
+using System.Text;
+namespace lessons
+{
+    class program
+    {
+        static void Main()
+        {
+            int crystalPrice = 10;
+            Console.Write("Приветствую, сколько у вас денег?: ");
+            int userMoney = Convert.ToInt32(Console.ReadLine());
+            Console.Write($"Кристаллы стоят по {crystalPrice} за штуку. Сколько купите?: ");
+            int buyCrystalls = Convert.ToInt32(Console.ReadLine());
+            int totalCost = buyCrystalls * crystalPrice;
+            userMoney = userMoney - totalCost;
+            Console.WriteLine($"Теперь у вас есть {buyCrystalls} кристаллов! Остаток денег: {userMoney}");
+        }
+    }
+}
