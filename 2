@@ -11,11 +11,11 @@ namespace lessons
             Console.InputEncoding = Encoding.Unicode;
             Console.OutputEncoding = Encoding.Unicode;
             Console.Write("Как вас зовут?:");
-            string name = Convert.ToString(Console.ReadLine());
+            string name = Console.ReadLine();
             Console.Write("Сколько вам лет?:");
-            string age = Convert.ToString(Console.ReadLine());
+            string age = Console.ReadLine();
             Console.Write("Какой ваш знак зодиака?:");
-            string zodiac = Convert.ToString(Console.ReadLine());
+            string zodiac = Сonsole.ReadLine();
             Console.WriteLine($"Вас зовут {name}, ваш возраст {age}, ваш знак зодиака " + zodiac);
         }
     }
