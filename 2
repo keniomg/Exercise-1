@@ -1,0 +1,18 @@
+using System.Collections;
+using System;
+namespace lessons
+{
+	class program
+	{	
+		static void Main()
+		{	
+			Console.Write("Как вас зовут?:");
+      string name = Convert.ToString(Console.ReadLine());
+			Console.Write("Сколько вам лет?:");
+			string age = Convert.ToString(Console.ReadLine());
+		  Console.Write("Какой ваш знак зодиака?:");
+			string zodiac = Convert.ToString(Console.ReadLine());
+			Console.WriteLine($"Вас зовут {name}, ваш возраст {age}, ваш знак зодиака " + zodiac);
+		}
+	}
+}
