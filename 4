@@ -1,1 +1,17 @@
-
+using System.Collections;
+using System;
+using System.Text;
+namespace lessons
+{
+    class program
+    {
+        static void Main()
+        {
+            string name = "Maketov";
+            string surname = "Oleg";
+            Console.WriteLine($"Your name {name}, and your surname {surname}");
+            (name, surname) = (surname, name);
+            Console.WriteLine($"Your name {name}, and your surname {surname}");
+        }
+    }
+}
