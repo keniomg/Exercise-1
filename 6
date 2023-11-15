@@ -11,8 +11,9 @@ namespace lessons
             int hour = 60;
             Console.Write("Людей в очереди: ");
             int peopleInLine = Convert.ToInt32(Console.ReadLine());
-            int hoursInLine = peopleInLine * receiptTime / hour;
-            int minutesInLine = peopleInLine * receiptTime % hour;
+            int timeInLine = peopleInLine * receiptTime;
+            int hoursInLine = timeInLine / hour;
+            int minutesInLine = timeInLine % hour;
             Console.WriteLine($"Вы должны отстоять в очереди {hoursInLine} часа и {minutesInLine} минут");
         }
     }
